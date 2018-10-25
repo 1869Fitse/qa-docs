@@ -1,0 +1,20 @@
+Testplan
+ data configeration
+ test types and duration(timeline)- manual or automation
+ types of testing( functional or non functional) 
+ roles 
+ risks 
+ resources
+ entry criteria
+ exit criteria
+ data configeration
+ testing schedule
+ number of qa team(who is gonna work on which testing type)
+ who is gonna be working on the test cases(who is gonna be working on prioratization)
+ security configuration- system memory, performance
+ info about contacting the admins(time and place)
+ deliverables
+ 
+uat
+aut 
+
