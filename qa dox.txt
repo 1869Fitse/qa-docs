@@ -1,0 +1,340 @@
+*SME-(subject matter expert)-experienced BA
+*CCB(change control board)=(initiation>approval>implementation)
+*MS VISIO-app used to make usecase diagragm
+        -process flow diagragm(uml
+        -activity diagragm(uml
+        -sequence diagragm(uml
+*brd/frd/usecase
+*test plan-high level document(a document made prior to testing)
+*test case- a low level document made daily
+         - components of a test case(test case id,req id,desc,date, author,actual result,expected result,pass/fail)
+*rtm- a map that shows that the requirement is covered with a test case
+*defect-
+*deffered 
+*ignored 
+*open
+*alpha testim
+*beta testing usually conducted prior to software launch and it is tested in the real world with real customers
+*unit testing
+*managing defect-softwares-qc,alm,mqc,jira,bugzilla
+*different types of reports we make as a qa
+*tabular defectreport
+*standard defect report
+*ddl-data definetion deals with data or table structure(create, alter, drop)
+*dml-data manipulation language deals with manipulatin of records(insert,update,delete)
+*null value is a value that is not suplied or represented
+*nvl is a function that makes a value not null
+*initcap is a function that makes the first letter of a character a capital later
+*uniqe is a constraint that makes a value unique
+*check constrait is a constraints that checks a condition
+*constraints-unique
+           -not null
+           -primary key
+           -check
+           -foreign key
+*anytime we create a table it always check the type and width by default.
+*constraints are the extra validations or restriction thats we inform when creating a table
+*unique-eg-create table xyz(age number(2) uniqe);
+*order by is a clause that is used to sort out outputs according to our preference asc or desc 
+          - we can not create
+          -we can not have repeated value
+*not null-we can not leave it null
+          -we can have repeated value
+*check - we must have a condition when writing check constraint
+          eg- create table xyz(age number(2)check(age>18));
+*primary key- a constraint that make a table value uniqe and not null
+             -you can only have one primary key
+*order by is a clause that is used to sort out outputs according to our preference asc or desc 
+*where is always followed by table name
+*having is used only with group by
+  sql eg- select* from emp1 order by deptno desc, ename asc;
+q1- how do you estimate your tasks
+q2- story point
+    eg-30 mins-1 story point
+       1 hour -2 story points
+       2 hours-4 story points
+       4 hours-8 story points
+       1 day  -16 story points
+scrum and kanban are two subsets of agile 
+ scrum is used by teams that has a deadline target that they are trying to work towards
+      -a release thats coming out,a client deliverable
+      - its basically a task with a fixed date and we're trying to manage towards it 
+*burndown chart
+priority- prioritizing based on urgency,chossing the most  important one out of all reqts
+system info in the reqt is about the info about the current system or cpu
+
+
+ALM * Dashboard
+    * Management
+    * Requirements
+      -requirements
+      -business models
+    * Testing
+      -test resources
+      -business compponents
+      -test plan 
+      -test lab
+      -test runs
+    * Defects
+
+always refer to the business requrement document as a basis to structure and organize our description and details
+ #test incident report includes
+  -how to reproduce the fault
+  -test environment details
+  -severity, priority
+  -the actual and expected outcomes
+ #part of configuration management:
+
+  -status accounting of configuration items
+  -identification of test versions
+  -record of changes to documentation over time
+  -controlled library access
+ #Error guessing is best used after more formal techniques have been applied
+ #IEEE 829 test plan documentation standard contains all of the following 
+
+   test items
+   test deliverables
+   test tasks
+   test environment
+
+  #The place to start if you want a (new) test tool is: Analyse your needs and requirements
+
+  #The standard that gives definitions of testing terms is:
+   BS7925-1
+
+  #Test Plan document of the Test Documentation Standard includes
+
+   Test items (i.e. software versions)
+   What is not to be tested
+   Test environments
+   Schedules and deadlines
+
+  #A typical commercial test execution tool would be able to perform 
+                       :
+    replaying inputs according to a programmed script
+    comparison of expected outcomes with actual outcomes
+    recording test inputs
+    reading test values from a data file
+
+  #white box design techniques all have an associated measurement technique
+   cyclomatic complexity is not a test measurement technique
+   black box measurement techniques all have an associated test design technique
+   white box measurement techniques all have an associated test design technique
+
+  #(false)black box design techniques all have an associated measurement technique
+ 
+  #Beta testing is:Performed by customers at their own site
+ 
+  #i. static analysis
+  ii. performance testing
+  iii. test management
+  iv. dynamic analysis
+  v. test running
+  vi. test data preparation
+      developers would typically use i and iv; test team ii, iii, v and vi
+
+   #The main purpose of the integration strategy for integration testing in the small is
+     to specify which modules to combine when and how many at once 
+
+   #When a new testing tool is purchased, it should be used first by:A small team to 
+     establish the best way to use the tool
+
+   #A tool that supports traceability, recording of incidents or scheduling of tests is called
+    a configuration management tool
+
+   #Test managers should:
+
+      report on deviations from the project plan
+      sign the system off for release
+      raise incidents on faults that they have found
+      provide information for risk analysis and quality improvement
+
+   #static analysis can find
+
+     The use of a variable before it has been defined
+     Unreachable (“dead”) code
+     The re-definition of a variable before it has been used
+     Array bound violations
+
+   #black box techniques
+
+     Equivalence partitioning
+     State transition testing
+     Syntax testing
+     Boundary value analysis
+   #Regression testing should be performed:
+
+    1) after the software has changed
+    2) when the environment has changed
+
+   #.i.early test design can prevent fault multiplication
+   iii. early test design can find faults
+    iv. early test design can cause changes to the requirements
+   
+   #When what is visible to end-users is a deviation from the specific or expected behavior, this is called:
+    a failure
+
+   #characteristics or review processes:
+
+ 1. walkthrough led by author
+ 2. informal review undocumented
+ 3. peer review no management participation
+ 4. inspection led by a trained moderator or leader
+ 5. inspection uses entry exit criteria
+   
+   #inspection is the most formal review process
+    inspections should be led by a trained leader
+    managers can perform inspections on management documents
+    inspection compares documents with predecessor (source) documents
+   # system testing:
+
+     business process-based testing
+     performance, load and stress testing
+     requirements-based testing
+     usability testing
+
+    #top-down integration testing is not a system testing
+     
+    #he main focus of acceptance testing is testing for a business perspective
+    
+    #the purpose of test completion criteria in a test plan is to plan when to stop testing
+    #Unreachable code would best be found usingis code reviews
+    
+    ?statement coverage vs branch coverage
+    ?Deliverable base-lining
+    ?McCabe’s Cyclomatic Complexity 
+    ?Logic coverage is:
+    ?Statement Coverage
+    ?pole Coverage
+    ?Condition Coverage
+    ?Path Coverage
+
+
+  #Component testing should be performed by development
+   Component testing is also know as isolation or module testing
+   Component testing should have completion criteria planned
+   Component testing  involve regression testing
+  # reasons for a failure
+    1) Testing fault
+    2) Software fault
+    3) Design fault
+    4) Environment Fault
+    5) Documentation Fault
+
+  #capture-replay tools
+     are used to support multi-user testing
+     are the most frequently purchased types of CAST tool
+     are ised to capture aspects of user behaviour
+
+  #characteristic for Testability?
+    Operability
+    Observability
+    Simplicity
+  #During the software development process, at what point can the test process start?   
+     When the software requirements have been approved
+  # part of a test plan?
+
+    Features to be tested
+    Risks
+    Schedule
+
+  #an objective for a test?
+    To find faults in the software
+    To assess whether the software is ready for release
+    To demonstrate that the software doesn’t work
+  #tools would be involved in the automation of regression test are
+    Capture/Playback
+ 
+  #an input field takes the year of birth between 1900 and 2004. The boundary values for testing this field are:
+
+    (does not include)0,1900,2004,2005
+    (does not include)1900, 2004
+     1899,1900,2004,2005
+
+  #To test a function, the programmer has to write a _driver_, which calls the function and passes it test data
+
+  # regression test:Will help ensure unchanged areas of the software have not been affected
+  #debugging is not a part of fundamentals of testing
+  # fundamentals of testing-> test planning and control
+                           -> analysis and design
+                           -> implementation and execution
+                           -> evaluating exit criteria and reporting
+                           -> test closure
+ # 7 principle of testing
+ # a system is not always reliable after debugging since it can cause more bug
+ # principle 3- early testing
+ # principle 4 -defect clustering-> a small number of modules usually contains most od 
+                                    the defects discovered during prerelease testing, or responsible for 
+                                    most of the operational faliure
+                                 -> pareto principle 80/20
+
+
+   
+  #Incidents may be raised against user requirements
+   Incidents require investigation and/or correction
+   Incidents are raised when expected and actual results differ
+
+  #The biggest potential cost saving from the use of CAST is Test execution
+
+  #Statement Coverage will  check for the following.
+   Unused Branches
+   Dead Code
+   Unused Statement
+ ,but does not check missing statements
+
+  #Independent Verification & Validation is Done by an Entity Outside the Project’s sphere of influence
+
+  #How much testing is enough?
+  The answer depends on the risk for your industry, contract and special requirements
+  
+  #The best definition of quality is Conformance to requirements
+
+  #Test cases are designed during: test specification
+
+
+  #Boundary value testing tests boundary conditions on, below and above the edges of input and output 
+  equivalence classes
+
+  #Equivalence partitioning is:
+  A black box testing technique appropriate to all levels of testing
+
+  #Fault Masking is Error condition hiding another error condition
+  
+  #Acceptance test cases are based on Requirements
+ 
+  #In a review meeting a moderator is a person who Mediates between people
+
+  #A common test technique during component test is Statement and branch testing
+  
+  #Defect Management process include
+        Defect prevention
+        Management reporting
+
+  #Tests are prioritized so that:You do the best testing in the time available
+  
+  #The oracle assumption:is that the tester can routinely identify the correct outcome of a test
+
+  # A quality characteristic listed in ISO 9126 Standard are
+      Functionality
+      Usability
+      Maintainability
+  
+  #Inspections can find all the following :
+    Variables not defined in the code
+    Spelling and grammar faults in the documents
+    Requirements that have been omitted from the design documents
+
+  #Inspections cannot find How much of the code has been covered
+
+  #If an expected result is not specified it may be difficult to determine if the test has passed or failed
+
+  #Code Coverage is used as a measure Test Effectiveness
+
+  #One Key reason why developers have difficulty testing their own work is:Lack of Objectivity
+
+  #static testing techniques are
+   Walkthrough
+   Data flow analysis
+   Inspections
+
+  #The inputs for developing a test plan are taken from aProject plan
